@@ -8,3 +8,29 @@
 3. Replace MySQL credentials with your own in `application.properties` file
 4. Run the application: `mvn clean spring-boot:run`
 5. Open your favorite browser: http://localhost:8080/signup
+
+### Image Screen shot
+
+Sign Up Page
+
+![Sign Up Page](img/signup1.png "Sign Up Page")
+
+![Sign Up Page](img/signup2.png "Sign Up Page")
+
+![Sign Up Page](img/signup3.png "Sign Up Page")
+
+Login Page
+
+![Login Page](img/login.png "Login Page")
+
+Login Success Page
+
+![Login Success Page](img/login1.png "Login Success Page")
+
+Forgot Password Page
+
+![Forgot Password Page](img/forgot.png "Forgot Password Page")
+
+Reset Password Page
+
+![Reset Password Page](img/reset.png "Reset Password Page")
