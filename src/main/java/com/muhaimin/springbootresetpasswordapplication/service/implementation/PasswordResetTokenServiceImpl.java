@@ -1,5 +1,6 @@
 package com.muhaimin.springbootresetpasswordapplication.service.implementation;
 
+import com.muhaimin.springbootresetpasswordapplication.entity.PasswordResetToken;
 import com.muhaimin.springbootresetpasswordapplication.repository.PasswordResetTokenRepository;
 import com.muhaimin.springbootresetpasswordapplication.service.framework.PasswordResetTokenService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,5 +13,10 @@ public class PasswordResetTokenServiceImpl implements PasswordResetTokenService 
     @Autowired
     public PasswordResetTokenServiceImpl(PasswordResetTokenRepository passwordResetTokenRepository) {
         this.passwordResetTokenRepository = passwordResetTokenRepository;
+    }
+
+    @Override
+    public PasswordResetToken findByToken(String token) {
+        return passwordResetTokenRepository.findByToken(token).orElse(null);
     }
 }
