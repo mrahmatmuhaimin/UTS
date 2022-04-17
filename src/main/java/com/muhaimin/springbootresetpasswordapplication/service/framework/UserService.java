@@ -1,6 +1,6 @@
 package com.muhaimin.springbootresetpasswordapplication.service.framework;
 
-import org.apache.catalina.User;
+import com.muhaimin.springbootresetpasswordapplication.entity.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
