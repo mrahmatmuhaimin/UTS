@@ -1,5 +1,6 @@
 package com.muhaimin.springbootresetpasswordapplication.entity;
 
+import com.muhaimin.springbootresetpasswordapplication.validator.PasswordConfirmation;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
