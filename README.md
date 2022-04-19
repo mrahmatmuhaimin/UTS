@@ -29,7 +29,13 @@ Login Success Page
 
 Forgot Password Page
 
-![Forgot Password Page](img/forgot.png "Forgot Password Page")
+![Forgot Password Page](img/forgot1.png "Forgot Password Page")
+
+![Forgot Password Page](img/forgot2.png "Forgot Password Page")
+
+Email Inbox
+
+![Email Inbox](img/email.png "Email Inbox")
 
 Reset Password Page
 
