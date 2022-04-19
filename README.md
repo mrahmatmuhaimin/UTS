@@ -39,4 +39,4 @@ Email Inbox
 
 Reset Password Page
 
-![Reset Password Page](img/reset.png "Reset Password Page")
+![Reset Password Page](img/reset1.png "Reset Password Page")
