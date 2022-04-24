@@ -28,6 +28,12 @@ public class User implements UserDetails {
     private String email;
     @NotEmpty(message = "{PASSWORD_REQUIRED}")
     private String password;
+    @NotEmpty(message = "{BIRT_DATE_REQUIRED}")
+    private String birthDate;
+    @NotEmpty(message = "{PHONE_NUMBER_REQUIRED}")
+    private String phoneNumber;
+    @NotEmpty(message = "{DEPARTMENT_NAME_REQUIRED}")
+    private String jurusan;
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = {@JoinColumn(name = "user_id")}, inverseJoinColumns = {
             @JoinColumn(name = "role_id")})
