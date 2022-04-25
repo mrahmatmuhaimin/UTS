@@ -1,11 +1,11 @@
-# spring-boot-forgot-password
+# spring-boot-forgot-password-crud
 
 
 ### Things todo list:
 
-1. Clone this repository: `git clone https://github.com/mrahmatmuhaimin/spring-boot-forgot-password.git`
-2. Navigate to the folder: `cd spring-boot-forgot-password`
-3. Replace MySQL credentials with your own in `application.properties` file
+1. Clone this repository: `git clone https://github.com/mrahmatmuhaimin/spring-boot-forgot-password-crud.git`
+2. Navigate to the folder: `cd spring-boot-forgot-password-crud`
+3. Replace MySQL or PostgreSQL credentials with your own in `application.yml` file
 4. Run the application: `mvn clean spring-boot:run`
 5. Open your favorite browser: http://localhost:8080/signup
 
@@ -23,9 +23,15 @@ Login Page
 
 ![Login Page](img/login.png "Login Page")
 
-Login Success Page
+Login Success Page (List Akun)
 
-![Login Success Page](img/login1.png "Login Success Page")
+![Login Success Page](img/list.png "Login Success Page")
+
+Edit Akun Page
+
+![Login Success Page](img/edit1.png "Login Success Page")
+
+![Login Success Page](img/edit2.png "Login Success Page")
 
 Forgot Password Page
 
