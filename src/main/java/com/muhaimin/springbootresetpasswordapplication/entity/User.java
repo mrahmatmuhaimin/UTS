@@ -1,6 +1,7 @@
 package com.muhaimin.springbootresetpasswordapplication.entity;
 
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -8,6 +9,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.time.LocalDate;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -28,9 +32,11 @@ public class User implements UserDetails {
     private String email;
     @NotEmpty(message = "{PASSWORD_REQUIRED}")
     private String password;
-    @NotEmpty(message = "{BIRT_DATE_REQUIRED}")
-    private String birthDate;
+    @NotNull(message = "{BIRT_DATE_REQUIRED}")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    private LocalDate birthDate;
     @NotEmpty(message = "{PHONE_NUMBER_REQUIRED}")
+    @Size(max = 13, min = 10)
     private String phoneNumber;
     @NotEmpty(message = "{DEPARTMENT_NAME_REQUIRED}")
     private String jurusan;
